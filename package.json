@@ -1,0 +1,43 @@
+{
+  "name": "naissance-service",
+  "version": "1.0.0",
+  "description": "Birth Certificate Management Service using Blockchain",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "deploy-contract": "node scripts/deploy-contract.js",
+    "setup": "npm run deploy-contract"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "web3": "^4.2.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "winston": "^3.11.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.54.0",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "solc": "^0.8.19"
+  },
+  "keywords": [
+    "blockchain",
+    "birth-certificate",
+    "ethereum",
+    "smart-contract",
+    "microservice"
+  ],
+  "author": "E-Santé Team",
+  "license": "MIT"
+} 
